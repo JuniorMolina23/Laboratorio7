@@ -1,0 +1,420 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border box;
+}
+.header {
+    background-color: black;
+    height: 80px;
+    position: fixed;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    font-size: 13vw;
+    border-bottom: 4px solid white;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto ;
+}
+.nav_link {
+    color: white;
+    text-decoration: none;
+}
+.titulo {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 40px;
+    line-height: 80px;
+}
+.nav_menu {
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+    
+}
+.nav_menu_items {
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 80px;
+    text-transform: uppercase;
+    width: max-content;
+}
+.nav_menu_link {
+    padding: 8px 12px;
+    border-radius: 3px;
+}
+
+.nav_toggle {
+    color: white;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    cursor: pointer;
+    display: none;
+}
+
+.separacion{
+    background-color: black;
+    height: 50px;
+    margin-bottom: 30px;
+}
+body{
+    background-color: gainsboro;
+}
+h0,.texto1,.texto2{
+    font-weight: bolder;
+}
+
+.pres{
+    width: 100vw;
+    height: auto;
+    position:initial
+}
+.gran{
+    width: 100vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+footer{
+    display:flex;
+    flex-direction: column;
+    background: #111;
+    height: auto;
+    color:white;
+    width: 100vw;
+    padding-top: 0px;
+}
+.fut{
+    
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.fut h1{
+    font-size: 29px;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 48px;
+}
+.fut p{
+    max-width: 500px;
+    margin: 10px auto;
+    font-size: 14px;
+}
+.social{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 16px 0 16px 0;
+}
+.social li{
+    margin: 0 10px;
+}
+
+.social a{
+    text-decoration: none;
+    color: white;
+}
+
+.social a i{
+    font-size: 17px;
+    transition: color .4s ease;
+
+}
+
+.social a:hover i{
+    color:aqua;
+}
+
+.bot{
+    background: black;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;   
+}
+
+.bot p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+
+@media (min-width:1245px) {
+    .contenedor{
+        width: 100%;
+        margin: 10px;
+        display: inline-block;
+    }
+    
+    img{
+        width: 50%;
+        float: left;
+        margin-left: 50px;
+    }
+    .imagen{
+        width: 35%;
+        transition:.5s;
+        border: solid 5px white;
+        border-radius: 2%;
+    }
+    .imagen:hover{
+        transform: scale(1.1);
+    }
+    .texto1{
+        width: 50%;
+        float: left;
+        padding-top: auto;
+        padding-left: 30px;
+        margin-top: 2vh;
+    }
+    .caja00{
+        color: black;
+        margin: 2px;
+        padding: 10px;
+        padding-bottom: 15px;
+        padding-top: 0px;
+        font-size: 30px;
+        text-align: justify;
+    }
+    .caja01{
+        color: black;
+        margin: 2px;
+        padding: 10px;
+        padding-bottom: 15px;
+        padding-top: 0px;
+        font-size: 30px;
+        text-align: justify;
+    }
+    .caja1,.caja2{
+        background-color: rgba(245, 245, 245, 0.651);
+        color: black;
+        border-radius: 10px;
+        margin: 10px;
+        padding: 10px;
+        text-align: justify;
+    }
+
+    .img1{
+        width: 50%;
+        float: right;
+        margin-right: 30px;
+    }
+    .imagen1{
+        width: 80%;
+        transition:.5s;
+        border: solid 5px white;
+        border-radius: 2%;
+    }
+    .imagen1:hover{
+        transform: scale(1.1);
+    }
+    .texto2{
+        width: 45%;
+        float: right;
+        margin-top: 3vh;
+    }
+    .caja3,.caja4{
+        background-color: rgba(245, 245, 245, 0.651);
+        color: black;
+        border-radius: 10px;
+        margin: 10px;
+        padding: 10px;
+        text-align: justify;
+    }
+
+    h0 p{
+        width: 50%;
+        padding-bottom: 20px;
+        padding-left: 55px;
+        margin-top: 2vh;
+        font-size: 40px;
+        
+    }
+
+}
+@media screen and (min-width:769px) and (max-width:1244px){
+    .contenedor{
+        background-color:gainsboro;
+        height: 630px;
+        margin: 5px;
+        margin-bottom: 5px;
+    }
+    .img,.img1{
+        width: 100%;
+    }
+    .imagen,.imagen1{
+        width: 50%;
+        transition:.5s;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        border: solid 5px white;
+        border-radius: 2%;
+    }
+    .imagen:hover,.imagen1:hover{
+        transform: scale(1.1);
+    }
+    .texto1,.texto2{
+        width: 100%;
+        margin-top: 20px;
+        
+    }
+    .caja00{
+        color: black;
+        margin: 2px;
+        padding: 10px;
+        padding-bottom: 15px;
+        padding-top: 0px;
+        font-size: 30px;
+        text-align: justify;
+    }
+    .caja01{
+        color: black;
+        margin: 2px;
+        padding: 10px;
+        padding-bottom: 15px;
+        padding-top: 0px;
+        font-size: 30px;
+        text-align: justify;
+    }
+    .caja1,.caja2,.caja3,.caja4{
+        background-color: rgba(245, 245, 245, 0.856);
+        color: black;
+        width: 44%;
+        border-radius: 10px;
+        margin: 10px;
+        padding: 10px;
+        float: left;
+        text-align: justify;
+    }
+
+    h0 p{
+        width: 50%;
+        padding-bottom: 20px;
+        padding-left: 55px;
+        margin-top: 2vh;
+        font-size: 40px;
+        
+    }
+    
+}
+@media screen and (max-width: 768px){
+    body {
+        padding-top: 50px;
+    }
+    .header {
+        height: 80px;
+    }
+    .footer{
+        width: 100vw;
+        padding-top: 20px; 
+    }
+    .titulo{
+        font-size: 7vw;
+    }
+    .nav_menu {
+        flex-direction: column ;
+        align-items: center;
+        margin-right: 20px;
+        background-color: black;
+        position: fixed;
+        top: 60px;
+        width: 100%;
+        padding: 20px 0;
+        overflow-y: auto;
+        left: 100%;
+        transition: top 0.3s;
+        
+    }
+    .nav_menu_items {
+        line-height: 70px;
+        
+    }
+    
+    .nav_toggle {
+        display: block;
+    }
+    .nav_menu_visible {
+        left: 0;
+    }
+    .separacion{
+        height: 0px;
+    }
+    .contenedor{
+        background-color:gainsboro;
+        height: auto;
+        padding: 5px;
+        margin: 5px;
+        margin-bottom: 5px;
+    }
+    .img,.img1{
+        width: 70%;
+        margin-left: 17vw ;
+        padding-top: 2vw;
+        padding-bottom: 2vw;
+    }
+    .imagen,.imagen1{
+        width: 80%;
+        transition:.5s;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border: solid 5px white;
+        border-radius: 2% ;
+    }
+    .imagen:hover,.imagen1:hover{
+        transform: scale(1.1);
+    }
+    .texto1,.texto2{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .caja00{
+        
+        color: black;
+        margin: 2px;
+        padding: 10px;
+        padding-bottom: 15px;
+        font-size: 30px;
+        text-align: justify;
+    }
+    .caja01{
+        color: black;
+        margin: 2px;
+        padding: 10px;
+        padding-bottom: 15px;
+        font-size: 30px;
+        text-align: justify;
+    }
+    .caja1,.caja2,.caja3,.caja4{
+        background-color: rgba(245, 245, 245, 0.856);
+        color: black;
+        border-radius: 10px;
+        margin: 10px;
+        padding: 10px;
+        transition:.5s;
+    }
+    h0 p{
+        width: 50%;
+        padding-bottom: 20px;
+        padding-left: 55px;
+        margin-top: 2vh;
+        font-size: 40px;
+        
+    }
+    .caja1:hover,.caja2:hover{
+        transform: scale(1.1);
+    }
+}
+
